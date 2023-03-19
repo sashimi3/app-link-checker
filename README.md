@@ -19,8 +19,3 @@ If there is anyone who can perform maintenance, add features, and distribute it 
 
 - Android App Links - <https://developer.android.com/training/app-links/>
 - iOS / Apple Universal Links - <https://developer.apple.com/documentation/xcode/supporting-associated-domains>
-
-## LICENSE
-
-TBD
-(It will probably be under the MIT license.)
