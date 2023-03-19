@@ -1,0 +1,35 @@
+{
+  "name": "App Links Checker",
+  "version": "0.1.0",
+  "description": "Checks if the current domain has an assetlinks.json or apple-app-site-association file.",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/",
+        "https://*/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "action": {
+    "default_title": "App Links Checker",
+    "default_popup": "popup.html"
+  }
+}
